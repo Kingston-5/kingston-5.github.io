@@ -20,22 +20,23 @@
 }
 
  body, html{
-     width:100%;
-     height:100%;
+     width:100vw;
+     height:100vh;
      margin:0px;
      padding:0px;
      display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
+	overflow: scroll;
      background-color: var(--white);
 }
 
 .main-content {
 	width: 100vw;
-	height: 100vh;
+	height: auto;
 	margin: 0px;
 	padding: 0px;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 }

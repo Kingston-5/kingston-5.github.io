@@ -1,0 +1,41 @@
+:root {
+    /* color-pallette */
+     --primary: #0018B3;
+    /* Steel blue */
+     --secondary: #009DFF;
+    /* light blue */
+     --gray: #A4AEB4;
+    /* gray */
+     --white: #FEFCFB;
+    /* white*/
+	 --black: #000000;
+	 /* black */
+}
+
+ * {
+	   font-family: "Mozilla Text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+     box-sizing: border-box;
+}
+
+ body, html{
+     width:100%;
+     height:100%;
+     margin:0px;
+     padding:0px;
+     display: flex;
+	flex-flow: column wrap;
+     background-color: var(--white);
+}
+
+.main-content {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}

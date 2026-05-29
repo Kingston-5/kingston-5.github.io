@@ -1,0 +1,83 @@
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+@keyframes animatetop{
+    from{top:-300px;opacity:0} 
+    to{top:0;opacity:1}
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.275);
+}
+
+.modal-content {
+    margin: 5% auto;
+  width: 600px;
+  max-width: 90%;
+  height: auto;
+  background-color: #fff;
+  outline: 0;
+}
+
+
+
+.modal-controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-main {
+    width: 100%;
+    height: 65%;
+    background: blue;
+	position: relative;
+    padding: 0;
+}
+
+.modal-footer {
+    height: auto
+    background: red;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    padding: 1rem;
+position: relative;
+    top: 0;
+z-index:10;
+  background-color: rgba(0, 0, 0, 0.275);
+    border: 0;
+}
+
+
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.modal-body {
+    flex: 1 1 auto;
+    padding: 0;
+}
+.modal-body p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+

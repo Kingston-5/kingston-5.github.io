@@ -9,6 +9,26 @@ const projects = [
 		"link": "this is the link",
 		"images": ["./images/lihawu/1.png", "./images/lihawu/2.png"],
 		"link": "https://www.linkedin.com/posts/ummo-inc_digitalisation-digitalsurveillance-publichealth-activity-7240226875912962048-qg__"
+	},
+
+
+	{
+		"id": 1,
+		"title": "Sunrise eCommerce",
+		"subtitle": "Professional | Centurion (pty) Ltd",
+		"description": "Sunrise Hub is a digital service marketplace by Centurion Technologies. We connect individuals, MSMEs & communities to trusted services. From eKYC,eCommerce, digital marketing, certification to payments-all in one place",
+		"link": "https://www.facebook.com/sunrisehub/",
+		"images": ["./images/sunrise/1.png", "./images/sunrise/2.png", "./images/sunrise/3.png", "./images/sunrise/4.png", "./images/sunrise/5.png", "./images/sunrise/6.png"],
+
+	},
+	{
+		"id": 2,
+		"title": "Swatini.shop",
+		"subtitle": "Entrepreneurial | client",
+		"description": "swatini.shop was a C2C ecommerce platform that enabled users to quickly list their pre-loved items for. key features included live chat, quick listing.",
+		"link": "",
+		"images": ["./images/swatini/1.png", "./images/swatini/2.png", "./images/swatini/3.png", "./images/swatini/4.png"],
+
 	}
 ]
 

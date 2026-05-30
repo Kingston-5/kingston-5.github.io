@@ -23,6 +23,54 @@ const projects = [
 	},
 	{
 		"id": 2,
+		"title": "Kwakhanya PlantIQ",
+		"subtitle": "Entrepreneurial | client",
+		"description": "Kwakhanya PlantIQ provides n affordable, hybrid smart irrigation system. key features included offline irrigation management, smart fertigation(automatic fertiliser despensor) push notifications water flow monitoring & analysis and machine learnign powered predictive scheduling.",
+		"link": "",
+		"images": ["./images/kwakhanya/1.jpeg", "./images/kwakhanya/2.jpeg", "./images/kwakhanya/3.jpeg"],
+	},
+
+	{
+		"id": 3,
+		"title": "Sakhisizwe Tutor App",
+		"subtitle": "Entrepreneurial | client",
+		"description": "Sakhisizwe is an offline first desktop student tutor application designed to help improve access to digital learnign materials for students even without access to the internet.",
+		"link": "",
+		"images": ["./images/sakhisizwe/1.png", "./images/sakhisizwe/2.png", "./images/sakhisizwe/3.png", "./images/sakhisizwe/4.png", "./images/sakhisizwe/5.png", "./images/sakhisizwe/6.png"],
+
+	},
+
+	{
+		"id": 4,
+		"title": "Church Management System",
+		"subtitle": "Entrepreneurial | client",
+		"description": "Streamlined member registration, profiles, attendance tracking, and communication. Centralized and automated financial transactions, contributions, and reporting for improved transparency and compliance.",
+		"link": "",
+		"images": ["./images/chms/1.png", "./images/chms/2.png", "./images/chms/3.png", "./images/chms/4.png", "./images/chms/5.png", "./images/chms/6.png"],
+
+	},
+
+	{
+		"id": 5,
+		"title": "Fundmo",
+		"subtitle": "Entrepreneurial | Fundmo (pty) Ltd",
+		"description": "startup vibes",
+		"link": "",
+		"images": ["./images/fundmo/1.jpg", "./images/fundmo/2.jpg", "./images/fundmo/3.jpg"],
+
+	},
+
+	{
+		"id": 6,
+		"title": "Centralised Mobile Money API",
+		"subtitle": "Academic | UNESWA B.Sc I.T",
+		"description": "The developed unified API offers a streamlined approach, facilitating financial service access and supporting Eswatini's FinTech ecosystem growth.",
+		"link": "",
+		"images": ["./images/api/1.png", "./images/fundmo/2.png", "./images/fundmo/3.png"],
+
+	},
+{
+		"id": 7,
 		"title": "Swatini.shop",
 		"subtitle": "Entrepreneurial | client",
 		"description": "swatini.shop was a C2C ecommerce platform that enabled users to quickly list their pre-loved items for. key features included live chat, quick listing.",

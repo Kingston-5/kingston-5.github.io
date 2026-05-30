@@ -1,3 +1,5 @@
+/** STATIC DATA **/
+
 const projects = [
 	{
 		"id": 0,
@@ -25,17 +27,6 @@ $(document).ready(function(){
 						</div>`);
 
 	});
-
-
-
-
-
-
-
-
-
-
-
 
 	// When the user clicks the button, open the modal 
 	$(".card").on('click', function(e) {

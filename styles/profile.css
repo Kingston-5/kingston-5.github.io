@@ -1,9 +1,31 @@
 .profile {
 	width 100vw;
-	height: 100vh;
+	height: auto;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
+	color: var(--black);
+}
+
+.profile-content {
+	display: flex;
+	gap: 2rem;
+}
+
+.profile-txt { 
+
+}
+
+
+.profile-txt, .profile-animation {
+	flex: 1;
+	margin: 2rem;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+  }
 }

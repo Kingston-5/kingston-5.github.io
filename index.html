@@ -42,156 +42,167 @@
 
 		<link rel="stylesheet" type="text/css" href="./styles/carousel.css" />
 		<link rel="stylesheet" type="text/css" href="./styles/work.css" />
+		<script
+	  src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"
+   type="module"
+   ></script>
+
 	</head>
-	<body class="main-content" id="main-content">
-		<!-- LANDING SECTION -->
-		<div class="landing">
-			<div class="landing-content">
-				<div class="hero-txt audiowide-regular">
-					<h1 class="audiowide-regular">Qhawe (Kingston) Matimela</h1>
-					<h3 class="audiowide-regular">Full Stack Developer | </h3>
+	<body>
+
+		<main class="main-content"id="main-content">
+
+
+			<!-- LANDING SECTION -->
+			<div class="landing">
+
+
+				<div class="landing-content">
+					<div class="hero-txt audiowide-regular">
+						<h1 class="audiowide-regular">Qhawe (Kingston) Matimela</h1>
+						<h3 class="audiowide-regular">Full Stack Developer</h3>
+					</div>
+					<div class="landing-btns">
+						<div>
+							<button class="swipe-btn">Hire Me -></button>
+							<button class="swipe-btn">See My Work -></button>
+						</div>
+
+					</div>
 				</div>
-				<div class="landing-btns">
+				<!-- From Uiverse.io by vinodjangid07 -->
+				<button class="circle-btn">
+					<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
+				</button>
+
+			</div>
+
+			<!-- PROFILE SECTION -->
+			<div class="profile">
+				<div class="profile-txt">
+					<h1 class="audiowide-regular">Hey! I`m Qhawe</h1>
+					<h4 class="space-grotesk">Im a well-rounded full-stack developer with 4+ years` experience delivering production web, mobile and desktop systems including hardware and machine learning integrations. <br/><br/> I`ve Progressed from self taught to lead on government projects serving thousands and I am a hands on entrepreneur with experience managing client projects end-to-end to deliver scalable and maintainable.<br/><br/> Currently completing a BSc in IT (UNESWA, expected July 2026)</h4>
+				</div>
+
+				<button class="circle-btn">
+					<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
+				</button>
+			</div>
+
+			<!-- WORK SECTION -->
+			<div class="work">
+				<!-- The Modal -->
+				<div id="modalDialog" class="modal">
+					<div class="modal-content animate-top">
+
+					</div>
+				</div>
+
+
+				<h2 class="title">My Work</h2>
+				<div class="gallery-wrap">
+					<div class="filters">
+
+						<div class"filter active">
+							ALL <sup>8</sup>
+							<span>|</span>
+						</div>
+
+						<div class"filter">
+							Professional<sup>3</sup>
+							<span>|</span>
+						</div>
+						<div class"filter active">
+							Entrepreneurial<sup>4</sup>
+							<span>|</span>
+						</div>
+
+						<div class"filter active">
+							Academic <sup>1</sup>
+							<span>|</span>
+						</div>
+					</div>
+
+					<div id="gallery"  class="gallery">
+
+					</div>
+				</div>
+			</div>
+			<!-- Professional Experience Section -->
+			<div class="experience">
+
+				<h2 class="title">Professional Exprerience</h2>
+				<details open>
+					<summary>
+						<span>
+							<p>Software Developer @ Centurion (Pty) Ltd</p>
+							<p>2025 - 2026</p>
+						</span>
+					</summary>
 					<div>
-						<button class="swipe-btn">Hire Me -></button>
-						<button class="swipe-btn">See My Work -></button>
+						Easy! As long as you don't have to support IE11 or older browsers you could use <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> natively.
+					</div>
+				</details>
+				<details>
+					<summary>
+						<span>
+							<p>Software Developer @ Ummo Inc</p>
+							<p>2024 - 2025</p>
+						</span>
+					</summary>
+					<div>
+						No worries. The fallback for these elements is quite good. They will display as open. You won't get the open/close mechanism, but you won't lose any content either.
+					</div>
+				</details>
+			</div>
+
+			<!-- Contact Section -->
+			<div class="contact">
+
+				<h2 class="title">Contact Me</h2>
+				<p>Have a question or want to work together?</p>
+				<div class="contact-card">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm-15.912-14.762v24h24v-24h-24zm12.033 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z"/></svg>
+					</div>
+					<div class="contact-details">
+						<h3>WhatsApp</h3>
+						<p>simply click to send me a whatsapp</p>
 					</div>
 
 				</div>
-			</div>
-			<!-- From Uiverse.io by vinodjangid07 -->
-			<button class="circle-btn">
-				<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
-			</button>
-
-		</div>
-
-		<!-- PROFILE SECTION -->
-		<div class="profile">
-			<div class="profile-txt">
-				<h1 class="audiowide-regular">Hey! I`m Qhawe</h1>
-				<h4 class="space-grotesk">Im a well-rounded full-stack developer with 4+ years` experience delivering production web, mobile and desktop systems including hardware and machine learning integrations. <br/><br/> I`ve Progressed from self taught to lead on government projects serving thousands and I am a hands on entrepreneur with experience managing client projects end-to-end to deliver scalable and maintainable.<br/><br/> Currently completing a BSc in IT (UNESWA, expected July 2026)</h4>
-			</div>
-
-			<button class="circle-btn">
-				<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
-			</button>
-		</div>
-
-		<!-- WORK SECTION -->
-		<div class="work">
-			<!-- The Modal -->
-			<div id="modalDialog" class="modal">
-				<div class="modal-content animate-top">
-
-				</div>
-			</div>
 
 
-			<h2 class="title">My Work</h2>
-			<div class="gallery-wrap">
-				<div class="filters">
+				<div class="contact-card">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
 
-					<div class"filter active">
-						ALL <sup>8</sup>
-						<span>|</span>
+					</div>
+					<div class="contact-details">
+						<h3>Call</h3>
+						<p>YOu can call me anytime! heres my number +26876949262</p>
 					</div>
 
-					<div class"filter">
-						Professional<sup>3</sup>
-						<span>|</span>
+				</div>
+
+				<div class="contact-card">
+					<div class="contact-icon">
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
 					</div>
-					<div class"filter active">
-						Entrepreneurial<sup>4</sup>
-						<span>|</span>
+					<div class="contact-details">
+						<h3>Email</h3>
+						<p>simply click to send me an email</p>
 					</div>
 
-					<div class"filter active">
-						Academic <sup>1</sup>
-						<span>|</span>
-					</div>
-				</div>
-
-				<div id="gallery"  class="gallery">
-
-				</div>
-			</div>
-		</div>
-		<!-- Professional Experience Section -->
-		<div class="experience">
-
-			<h2 class="title">Professional Exprerience</h2>
-			<details open>
-				<summary>
-					<span>
-						<p>Software Developer @ Centurion (Pty) Ltd</p>
-						<p>2025 - 2026</p>
-					</span>
-				</summary>
-				<div>
-					Easy! As long as you don't have to support IE11 or older browsers you could use <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> natively.
-				</div>
-			</details>
-			<details>
-				<summary>
-					<span>
-						<p>Software Developer @ Ummo Inc</p>
-						<p>2024 - 2025</p>
-					</span>
-				</summary>
-				<div>
-					No worries. The fallback for these elements is quite good. They will display as open. You won't get the open/close mechanism, but you won't lose any content either.
-				</div>
-			</details>
-		</div>
-
-		<!-- Contact Section -->
-		<div class="contact">
-
-			<h2 class="title">Contact Me</h2>
-			<p>Have a question or want to work together?</p>
-			<div class="contact-card">
-				<div class="contact-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm-15.912-14.762v24h24v-24h-24zm12.033 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z"/></svg>
-				</div>
-				<div class="contact-details">
-					<h3>WhatsApp</h3>
-					<p>simply click to send me a whatsapp</p>
 				</div>
 
 			</div>
 
 
-			<div class="contact-card">
-				<div class="contact-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
-
-				</div>
-				<div class="contact-details">
-					<h3>Call</h3>
-					<p>YOu can call me anytime! heres my number +26876949262</p>
-				</div>
-
-			</div>
-
-			<div class="contact-card">
-				<div class="contact-icon">
-
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
-				</div>
-				<div class="contact-details">
-					<h3>Email</h3>
-					<p>simply click to send me an email</p>
-				</div>
-
-			</div>
-
-		</div>
-
-
-		<footer>
-			<p> &copy 2026 - Qhawe (Kingston) Matimela</p>
-		</footer>
-
+			<footer>
+				<p> &copy 2026 - Qhawe (Kingston) Matimela</p>
+			</footer>
+		</main>
 	</body>
 </html>

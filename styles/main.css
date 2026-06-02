@@ -1,15 +1,18 @@
 :root {
     /* color-pallette */
-     --primary: #0018B3;
-    /* Steel blue */
-     --secondary: #009DFF;
-    /* light blue */
-     --gray: #A4AEB4;
-    /* gray */
+	/* Regal Navy */
+     --primary: #003D80;
+    /* Blue Grey */
+     --secondary: #5E9BDC;
+    /* Dodger Blue */
+     --tetiary: #3591F4;
+    /* Dust Grey */
+	 --grey: #D1D1D1;
+	 /*white */
      --white: #FEFCFB;
-    /* white*/
+    /* black*/
 	 --black: #000000;
-	 /* black */
+
 }
 
  * {
@@ -27,10 +30,12 @@
      display: flex;
 	flex-flow: column nowrap;
 	overflow: scroll;
-     background-color: var(--white);
+
+
 }
 
 .main-content {
+
 	width: 100vw;
 	height: auto;
 	margin: 0px;
@@ -38,8 +43,35 @@
 	display: flex;
 	flex-flow: column nowrap;
 
+    position: relative; /* Position content normally */
+    z-index: 2; /* Ensure content is above the animation */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
 	align-items: center;
 }
+
+
+
+.background-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full width */
+    overflow: hidden; /* Hide overflow */
+}
+
+dotlottie-wc {
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire container */
+    height: 100vh; /* Cover the entire container */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+.content {
+
+}
+
 footer {
 	margin-top : 1rem;
 	padding :1rem;

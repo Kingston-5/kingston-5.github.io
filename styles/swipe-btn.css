@@ -1,9 +1,9 @@
 /* From Uiverse.io by SujitAdroja */ 
 .swipe-btn {
-  color: var(--black);
+  color: var(--secondary);
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid var(--black);
+  border: 2px solid var(--secondary);
   padding: 10px 20px;
   font-size: 17px;
   cursor: pointer;
@@ -26,7 +26,8 @@
   top: 0;
   left: -40px;
   transform: skewX(45deg);
-  background-color: red;
+  color: var(--white);
+  background-color: var(--tetiary);
   z-index: -1;
   transition: all 1s;
 }

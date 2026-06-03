@@ -46,8 +46,21 @@
 	  src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"
    type="module"
    ></script>
-   
 
+<!-- Paste this right before your closing </head> tag -->
+<script type="text/javascript">
+  (function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+  for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){b.push([g,[p].concat(Array.prototype.slice.call(arguments,0))])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===
+  e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[])
+
+  
+  mixpanel.init('94710245359ee231ad6282fe5d64c241', {
+    autocapture: true,
+    record_sessions_percent: 100,
+    api_host: 'https://api-eu.mixpanel.com',
+  })
+
+</script>
 	</head>
 	<body>
 
@@ -64,42 +77,39 @@
 						<h3 class="audiowide-regular">Full Stack Developer</h3>
 					</div>
 					<div class="landing-btns">
-						<div>
-							<button class="swipe-btn">Hire Me -></button>
-							<button class="swipe-btn">See My Work -></button>
-						</div>
+
+						<a href="#contact" class="swipe-btn">Talk To Me</a>
+						<a href="#work" class="swipe-btn">See My Work</a>
+
 
 					</div>
 				</div>
 				<!-- From Uiverse.io by vinodjangid07 -->
-				<button class="circle-btn">
+				<a href="#profile" class="circle-btn">
 					<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
-				</button>
+				</a>
 
 			</div>
 
 			<!-- PROFILE SECTION -->
-			<div class="profile">
+			<div class="profile" id="profile">
 				<div class="profile-content">
 					<div class="profile-txt">
 						<h1 class="audiowide-regular">Hey! I`m Qhawe</h1>
-						<h4 class="space-grotesk">Im a Full‑stack developer with 4+ years’ experience delivering production web, mobile and desktop systems, hardware integrations, data analysis and ML <br/><br/> Ive Progressed from self‑taught to lead on government projects serving thousands, and I’m a hands‑on entrepreneur managing end‑to‑end, scalable solutions.
-</h4>
+						<h4 class="space-grotesk">Im a Full‑stack developer with 4+ years’ experience delivering production web, mobile and desktop systems, hardware integrations, data analysis and ML models<br/><br/> Ive Progressed from self‑taught to lead on government projects serving thousands, and I’m a hands‑on entrepreneur managing end‑to‑end, scalable solutions.
+						</h4>
 
 					</div>
-						<div class="profile-animation">
-							<img src="./images/profile.svg"/>
-						</div>
+					<div class="profile-animation">
+						<img src="./images/profile.svg"/>
+					</div>
 
 				</div>
 
-				<button class="circle-btn">
-					<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
-				</button>
 			</div>
 
 			<!-- WORK SECTION -->
-			<div class="work">
+			<div class="work" id="work">
 				<!-- The Modal -->
 				<div id="modalDialog" class="modal">
 					<div class="modal-content animate-top">
@@ -107,160 +117,222 @@
 					</div>
 				</div>
 
-				<h2 class="title">My Work</h2>
+				<h2 class="audiowide-regular">My Work</h2>
 				<div class="gallery-wrap">
 					<div class="filters">
 
-<div class="filters">
+						<div class="filters">
 
-    <div class="filter active" data-filter="all">
-        ALL <sup id="all-count"></sup>
-        <span>|</span>
-    </div>
+							<div class="filter active" data-filter="all">
+								ALL <sup id="all-count"></sup>
+								<span>|</span>
+							</div>
 
-    <div class="filter" data-filter="company-work">
-        Company Work <sup id="company-work-count"></sup>
-        <span>|</span>
-    </div>
+							<div class="filter" data-filter="company-work">
+								Company Work <sup id="company-work-count"></sup>
+								<span>|</span>
+							</div>
 
-    <div class="filter" data-filter="freelance">
-        Freelance <sup id="freelance-count"></sup>
-        <span>|</span>
-    </div>
-    
-        <div class="filter" data-filter="ventures">
-        Ventures <sup id="ventures-count"></sup>
-        <span>|</span>
-    </div>
+							<div class="filter" data-filter="freelance">
+								Freelance <sup id="freelance-count"></sup>
+								<span>|</span>
+							</div>
 
-    <div class="filter" data-filter="academic">
-        Academic <sup id="academic-count"></sup>
-    </div>
+							<div class="filter" data-filter="ventures">
+								Ventures <sup id="ventures-count"></sup>
+								<span>|</span>
+							</div>
 
-</div>
+							<div class="filter" data-filter="academic">
+								Academic <sup id="academic-count"></sup>
+							</div>
 
-					<div id="gallery"  class="gallery">
+						</div>
 
+						<div id="gallery"  class="gallery">
+
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- Professional Experience Section -->
-			<div class="experience">
 
-				<h2 class="title">Professional Exprerience</h2>
-				<details open>
-					<summary>
-						<span>
-							<p>Software Developer @ Centurion (Pty) Ltd</p>
-							<p>May 2025 - October 2025</p>
-						</span>
-					</summary>
-					<div>
-						Delivered both front-end and back-end features for the "Sunrise" ecommerce platform in a fast-paced startup setting through ownership of business-critical functionality.
+
+				<!-- Contact Section -->
+				<section class="contact-section" id="contact">
+
+					<div class="contact-panel">
+
+						<div class="contact-visual">
+							<div class="animation-placeholder">
+
+								<img src="./images/free_consultation.svg"/>
+							</div>
+						</div>
+
+						<div class="contact-info">
+
+							<h2>Let's Work Together</h2>
+
+							<p>
+								Have a project in mind, need a developer, or simply want to connect?
+								Reach out through any of the channels below.
+							</p>
+
+							<a class="contact-method" href="tel:+26876949262">
+								<div class="contact-method-icon">
+									<img src="./images/call.svg"/>
+								</div>
+
+								<div class="contact-method-details">
+									<h3>Phone</h3>
+									<p>+268 7694 9262</p>
+								</div>
+							</a>
+
+							<a class="contact-method" href="https://wa.me/26876949262" target="_blank">
+								<div class="contact-method-icon">
+									<img src="./images/whatsapp.svg"/>
+								</div>
+
+								<div class="contact-method-details">
+									<h3>WhatsApp</h3>
+									<p>Start a conversation</p>
+								</div>
+							</a>
+
+							<a class="contact-method" href="mailto:qhawem54@gmail.com">
+								<div class="contact-method-icon">
+									<img src="./images/email.svg"/>
+								</div>
+
+								<div class="contact-method-details">
+									<h3>Email</h3>
+									<p>qhawem54@gmail.com</p>
+								</div>
+							</a>
+
+						</div>
+
 					</div>
-				</details>
-				<details>
-					<summary>
-						<span>
-							<p>Software Development Intern, Royal Science and Technology Park (RSTP).</p>
-							<p>February 2025 - March 2025</p>
-						</span>
-					</summary>
-					<div>
-						Contributed to the development and maintenance of internal software systems extracting and manipulating mainframe sourced data for analysis, reporting, dashboards and decision making
-					</div>
-				</details>
-				
-				<details>
-					<summary>
-						<span>
-							<p>IT Intern, George Town University CGHPI.
-</p>
-							<p>December 2024 - January 2025</p>
-						</span>
-					</summary>
-					<div>
-						Provided IT customer support and maintenance for corporate clients and on site clinic staff through helpdesk tools.
-					</div>
-				</details>
-				<details>
-					<summary>
-						<span>
-							<p>Web Developer, Ummo Inc. </p>
-							<p>May2024 - Dec 2024</p>
-						</span>
-					</summary>
-					<div>
-						Designed and implemented the front-end architecture for the Lihawu System, a Ministry of Health web application, reducing traveler screening time to under 20 seconds across 8 ports of entry. <br/><br/>Optimized the online SDS test platform (SkillsHub) for mobile responsiveness and user experience, enabling instant test result viewing and faster completion times
+
+				</section>
+
+				<!-- Professional Experience Section -->
+				<div class="experience">
+
+					<h2 class="title">Professional Exprerience</h2>
+					<details open>
+						<summary>
+							<span>
+								<p>Software Developer @ Centurion (Pty) Ltd</p>
+								<p>May 2025 - October 2025</p>
+							</span>
+						</summary>
+						<div>
+							Delivered both front-end and back-end features for the "Sunrise" ecommerce platform in a fast-paced startup setting through ownership of business-critical functionality.
+						</div>
+					</details>
+					<details>
+						<summary>
+							<span>
+								<p>Software Development Intern, Royal Science and Technology Park (RSTP).</p>
+								<p>February 2025 - March 2025</p>
+							</span>
+						</summary>
+						<div>
+							Contributed to the development and maintenance of internal software systems extracting and manipulating mainframe sourced data for analysis, reporting, dashboards and decision making
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							<span>
+								<p>IT Intern, George Town University CGHPI.
+								</p>
+								<p>December 2024 - January 2025</p>
+							</span>
+						</summary>
+						<div>
+							Provided IT customer support and maintenance for corporate clients and on site clinic staff through helpdesk tools.
+						</div>
+					</details>
+					<details>
+						<summary>
+							<span>
+								<p>Web Developer, Ummo Inc. </p>
+								<p>May2024 - Dec 2024</p>
+							</span>
+						</summary>
+						<div>
+							Designed and implemented the front-end architecture for the Lihawu System, a Ministry of Health web application, reducing traveler screening time to under 20 seconds across 8 ports of entry. <br/><br/>Optimized the online SDS test platform (SkillsHub) for mobile responsiveness and user experience, enabling instant test result viewing and faster completion times
+
+						</div>
+					</details>
+				</div>
+
+				<!-- Contact Section -->
+				<section class="contact-section" id="contact">
+
+					<div class="contact-panel">
+
+						<div class="contact-visual">
+							<div class="animation-placeholder">
+
+								<img src="./images/free_consultation.svg"/>
+							</div>
+						</div>
+
+						<div class="contact-info">
+
+							<h2>Let's Work Together</h2>
+
+							<p>
+								Have a project in mind, need a developer, or simply want to connect?
+								Reach out through any of the channels below.
+							</p>
+
+							<a class="contact-method" href="tel:+26876949262">
+								<div class="contact-method-icon">
+									<img src="./images/call.svg"/>
+								</div>
+
+								<div class="contact-method-details">
+									<h3>Phone</h3>
+									<p>+268 7694 9262</p>
+								</div>
+							</a>
+
+							<a class="contact-method" href="https://wa.me/26876949262" target="_blank">
+								<div class="contact-method-icon">
+									<img src="./images/whatsapp.svg"/>
+								</div>
+
+								<div class="contact-method-details">
+									<h3>WhatsApp</h3>
+									<p>Start a conversation</p>
+								</div>
+							</a>
+
+							<a class="contact-method" href="mailto:qhawem54@gmail.com">
+								<div class="contact-method-icon">
+									<img src="./images/email.svg"/>
+								</div>
+
+								<div class="contact-method-details">
+									<h3>Email</h3>
+									<p>qhawem54@gmail.com</p>
+								</div>
+							</a>
+
+						</div>
 
 					</div>
-				</details>
-			</div>
 
-			<!-- Contact Section -->
-<section class="contact-section">
-
-    <div class="contact-panel">
-
-        <div class="contact-visual">
-            <div class="animation-placeholder">
-                
-							<img src="./images/free_consultation.svg"/>
-            </div>
-        </div>
-
-        <div class="contact-info">
-
-            <h2>Let's Work Together</h2>
-
-            <p>
-                Have a project in mind, need a developer, or simply want to connect?
-                Reach out through any of the channels below.
-            </p>
-
-<a class="contact-method" href="tel:+26876949262">
-    <div class="contact-method-icon">
-							<img src="./images/call.svg"/>
-    </div>
-
-    <div class="contact-method-details">
-        <h3>Phone</h3>
-        <p>+268 7694 9262</p>
-    </div>
-</a>
-
-<a class="contact-method" href="https://wa.me/26876949262" target="_blank">
-    <div class="contact-method-icon">
-							<img src="./images/whatsapp.svg"/>
-    </div>
-
-    <div class="contact-method-details">
-        <h3>WhatsApp</h3>
-        <p>Start a conversation</p>
-    </div>
-</a>
-
-<a class="contact-method" href="mailto:qhawem54@gmail.com">
-    <div class="contact-method-icon">
-							<img src="./images/email.svg"/>
-    </div>
-
-    <div class="contact-method-details">
-        <h3>Email</h3>
-        <p>qhawem54@gmail.com</p>
-    </div>
-</a>
-
-        </div>
-
-    </div>
-
-</section>
+				</section>
 
 
-			<footer>
-				<p> &copy 2026 - Qhawe (Kingston) Matimela</p>
-			</footer>
+				<footer>
+					<p> &copy 2026 - Qhawe (Kingston) Matimela</p>
+				</footer>
 		</main>
 	</body>
 </html>

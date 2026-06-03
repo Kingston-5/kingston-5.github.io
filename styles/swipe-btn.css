@@ -5,9 +5,10 @@
   text-decoration: none;
   border: 2px solid var(--secondary);
   border-radius: 12px;
-  box-shadow: 0 4px 12px  var(--grey);;
+  box-shadow: 4px 8px 24px  var(--grey);;
   padding: 10px 20px;
   font-size: 17px;
+  margin-left: 1rem;
   cursor: pointer;
   font-weight: bold;
   background: transparent;

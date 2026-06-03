@@ -6,7 +6,7 @@ const projects = [
 		"title": "Lihawu Health Screening",
 		category: "company-work",
 		"subtitle": "Company Work | Ummo",
-		"description": "a health testing system implemented at ports of entry in Eswatini to monitor and manage public health risks. It focuses on screening travelers for diseases and ensuring safe cross-border transportation to protect the health of the population.",
+		"description": "A Minitsy of Health initiative implemented at ports of entry in Eswatini to monitor and manage public health risks. It focuses on screening travelers for diseases and ensuring safe cross-border transportation to protect the health of the population.",
 		"link": "this is the link",
 		"images": ["./images/lihawu/1.png", "./images/lihawu/2.png"],
 		"link": "https://www.linkedin.com/posts/ummo-inc_digitalisation-digitalsurveillance-publichealth-activity-7240226875912962048-qg__"
@@ -46,6 +46,26 @@ const projects = [
 
 	{
 		"id": 4,
+		"title": "Superb Choice Brands",
+		category: "freelance",
+		"subtitle": "Freelance",
+		"description": "Superb choice brands celebrates the beauty and quality of Eswatini craftsmanship. Every product tells a story of local talent, sustainable practices, and community empowerment.",
+		"link": "https://superbchoicebrands.net/",
+		"images": ["./images/superb/1.png", "./images/superb/2.png", "./images/superb/3.png"],
+	},
+
+	{
+		"id": 5,
+		"title": "Eswatini Verbal Arts Assembly",
+		category: "freelance",
+		"subtitle": "Freelance",
+		"description": "At Eswatini Verbal Assembly, we believe every voice has the power to inspire, influence, and ignite change. Through comprehensive training, dedicated mentorship, and competitive opportunities, we cultivate the next generation of eloquent leaders.",
+		"link": "https://eswatiniverbalarts.org/",
+		"images": ["./images/evaa/1.png", "./images/evaa/3.png"],
+
+	},
+	{
+		"id": 6,
 		"title": "Church Management System",
 		category: "freelance",
 		"subtitle": "Freelance",
@@ -56,28 +76,28 @@ const projects = [
 	},
 
 	{
-		"id": 5,
+		"id": 7,
 		"title": "Fundmo",
 		category: "ventures",
-		"subtitle": "Ventures | Fundmo (pty) Ltd",
-		"description": "startup vibes",
+		"subtitle": "Ventures | FundMo (pty) Ltd",
+		"description": "Co-founded a financial technology startup that developed a mobile money-based crowdfunding platform to help other Startups and social projects to secure the necessary funding they require to make an impact in this world. This project was initiated after a 1st place victory in the MTN MoMo Hackathon.",
 		"link": "",
 		"images": ["./images/fundmo/1.jpg", "./images/fundmo/2.jpg", "./images/fundmo/3.jpg"],
 
 	},
 
 	{
-		"id": 6,
+		"id": 8,
 		"title": "Centralised Mobile Money API",
 		category: "academic",
 		"subtitle": "Academic | UNESWA B.Sc I.T",
-		"description": "The developed unified API offers a streamlined approach, facilitating financial service access and supporting Eswatini's FinTech ecosystem growth.",
+		"description": "Inspired by my work on FundMo, I developed unified API offers a streamlined approach to integrating with multiple Mobile Money providers allowing small scale developers to skip the red tape and go straight to production, facilitating financial service access and supporting Eswatini's FinTech ecosystem growth.",
 		"link": "",
 		"images": ["./images/api/1.png", "./images/api/2.png", "./images/api/3.png"],
 
 	},
 {
-		"id": 7,
+		"id": 9,
 		"title": "Swatini.shop",
 		category: "freelance",
 		"subtitle": "Freelance",

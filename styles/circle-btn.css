@@ -1,28 +1,23 @@
 /* From Uiverse.io by vinodjangid07 */ 
 .circle-btn {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: var(--primary);
   border: none;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 0px 4px var(--grey);
+  box-shadow: 0px 0px 4px 1px var(--tetiary);
   cursor: pointer;
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
 }
 
-.svgIcon {
-  width: 12px;
+.circle-btn img {
+  width: 100px;
   transition-duration: 0.3s;
-}
-
-.svgIcon path {
-  fill: white;
 }
 
 .circle-btn:hover {
@@ -55,4 +50,23 @@
   /* transform: translateY(-30px); */
   transition-duration: 0.3s;
 }
+.back-to-top {
+	position: fixed;
+	bottom: 2.5rem;
+	right: 1.5rem;
+}
 
+.back-to-top::before {
+  content: "Back To Top";
+}
+
+.whatsapp-cta {
+	position:fixed;
+	bottom: 2.5rem;
+	left: 1.5rem;
+}
+
+.whatsapp-cta::before {
+  content: "Click To chat";
+  color: var(--black);
+}

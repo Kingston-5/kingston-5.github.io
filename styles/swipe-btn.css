@@ -1,14 +1,15 @@
 /* From Uiverse.io by SujitAdroja */ 
 .swipe-btn {
-  color: var(--secondary);
+  color: var(--primary);
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid var(--secondary);
-  border-radius: 12px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
   box-shadow: 4px 8px 24px  var(--grey);;
   padding: 10px 20px;
   font-size: 17px;
-  margin-left: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
   cursor: pointer;
   font-weight: bold;
   background: transparent;

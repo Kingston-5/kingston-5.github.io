@@ -27,3 +27,61 @@
 	display: flex;
 	justify-content: center;
 }
+
+/* container and initial fade-in */
+.landing-content {
+  margin-bottom: 5em;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 700ms ease forwards 300ms;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* typing effect setup */
+.typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .12em solid transparent; /* reserve space for caret */
+  font-weight: 600;
+  color: var(--primary);
+  /* control speed by adjusting steps() and duration */
+  animation:
+    typing 3s steps(30, end) 600ms 1 normal both,
+    blink-caret .7s step-end infinite 3.6s;
+}
+
+/* typing keyframe: animate width from 0 to full */
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* caret blink using an inset pseudo-element so it matches text color */
+.typing::after {
+  content: "";
+  display: inline-block;
+  width: .12em;
+  height: 1em;
+  margin-left: .08em;
+  vertical-align: middle;
+  background: var(--primary);
+  animation: blink-caret .7s step-end infinite;
+}
+
+/* fallback blink definition used by the above animations */
+@keyframes blink-caret {
+  from, to { opacity: 0; }
+  50%     { opacity: 1; }
+}
+
+/* Optional: loop through multiple lines using delays (no JS): */
+.typing.multi { /* example for two lines: adjust durations/delays as needed */
+  animation:
+    typing 3s steps(30,end) 600ms 1 normal both,
+    typing 3s steps(30,end) 4s 1 normal reverse both; /* reverse hides again */
+}

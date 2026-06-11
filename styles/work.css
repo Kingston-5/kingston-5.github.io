@@ -50,10 +50,9 @@
 .card {
 	width: min(500px, 100%);
 	overflow: hidden;
-
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--primary);
   border-radius: 12px;
-  box-shadow: 0 4px 12px  var(--grey);;
+  box-shadow: 0 4px 12px  var(--primary);;
 	transition:
 		transform 0.3s ease,
 		box-shadow 0.3s ease;

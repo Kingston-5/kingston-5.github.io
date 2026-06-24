@@ -1,37 +1,42 @@
+/* From Uiverse.io by SujitAdroja */ 
 .swipe-btn {
-    position: relative;  /* anchor for ::before */
-    overflow: hidden;    /* clip the sliding fill */
-    background: transparent;
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    padding: 6px 14px;
-    border-radius: 6px;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: border-color 0.2s, color 0.2s;
-    text-decoration: none;
-    display: inline-block; /* needed for <a> tags to respect overflow:hidden */
+color: var(--secondary);
+text-transform: uppercase;
+text-decoration: none;
+border: 2px solid var(--secondary);
+border-radius: 12px;
+  box-shadow: 0 4px 12px  var(--grey);;
+  box-shadow: 4px 8px 24px  var(--grey);;
+padding: 10px 20px;
+font-size: 17px;
+  margin-left: 1rem;
+cursor: pointer;
+font-weight: bold;
+background: transparent;
+position: relative;
+transition: all 1s;
+overflow: hidden;
 }
 
 .swipe-btn:hover {
-    border-color: var(--tetiary);
-    color: var(--white);
+color: var(--white);
 }
 
 .swipe-btn::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: -40px;
-    transform: skewX(45deg);
-    background-color: var(--tetiary);
-    z-index: -1;  /* keep text above the fill */
-    transition: all 1s;
+content: "";
+position: absolute;
+height: 100%;
+width: 0%;
+top: 0;
+left: -40px;
+transform: skewX(45deg);
+color: var(--white);
+background-color: var(--tetiary);
+z-index: -1;
+transition: all 1s;
 }
 
 .swipe-btn:hover::before {
-    width: 160%;
+width: 160%;
 }
+~

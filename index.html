@@ -24,6 +24,7 @@
 
 		<script src="./scripts/carousel.js"></script>
 		<script src="./scripts/modal.js"></script>
+		<script src="./scripts/events.js"></script>
 
 		<script src="./scripts/gallery.js"></script>
 		<link rel="stylesheet" type="text/css" href="./styles/main.css" />
@@ -74,37 +75,18 @@
 						</a>
 
 						<!-- whatsapp CTA -->
-						<a href="https://wa.me/26879736175?text=Hi%20Qhawe%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20opportunity."
-		 target="_blank" class="circle-btn whatsapp-cta">
+						<a id="whatsapp-cta" href="https://wa.me/26879736175?text=Hi%20Qhawe%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20opportunity."
+		 target="_blank" class="circle-btn whatsapp-cta" onclick=>
 							<img src="./images/whatsapp.svg"/>
 						</a>
-						<!-- LANDING SECTION -->
-						<div class="landing" id="landing">
-
-
-							<div class="landing-content">
-								<div class="hero-txt audiowide-regular">
-									<h1 class="audiowide-regular">Qhawe (Kingston) Matimela</h1>
-									<h3 class="audiowide-regular typing">Full Stack Developer</h3>
-								</div>
-								<div class="landing-btns">
-
-									<a href="#contact" class="swipe-btn">Talk To Me</a>
-									<a href="#work" class="swipe-btn">See My Work</a>
-
-
-								</div>
-							</div>
-
-
-						</div>
+C
 
 						<!-- PROFILE SECTION -->
 						<div class="profile" id="profile">
 							<div class="profile-content">
 								<div class="profile-txt">
 									<h1 class="audiowide-regular">Hey! I`m Qhawe</h1>
-									<h4 class="space-grotesk">Im a Full‑stack developer with 4+ years’ experience delivering production web, mobile and desktop systems, hardware integrations, data analysis and ML models<br/><br/> Ive Progressed from self‑taught to lead on government projects serving thousands, and I’m a hands‑on entrepreneur managing end‑to‑end, scalable solutions.
+									<h4 class="space-grotesk">Im a Full‑stack developer with 4+ years’ experience delivering production web, mobile and desktop systems, hardware integrations, data analysis and ML models<br/><br/> Ive Progressed from self‑taught to working on government projects serving thousands, and I’m a hands‑on entrepreneur managing end‑to‑end, scalable solutions.
 									</h4>
 
 								</div>
@@ -129,26 +111,24 @@
 							<div class="gallery-wrap">
 								<div class="filters">
 
-									<div class="filters">
-
 										<div class="filter active audiowide-regular" data-filter="all">
 											ALL <sup id="all-count"></sup>
-											<span>|</span>
+											<span>/</span>
 										</div>
 
 										<div class="filter audiowide-regular" data-filter="company-work">
 											Company Work <sup id="company-work-count"></sup>
-											<span>|</span>
+											<span>/</span>
 										</div>
 
 										<div class="filter audiowide-regular" data-filter="freelance">
 											Freelance <sup id="freelance-count"></sup>
-											<span>|</span>
+											<span>/</span>
 										</div>
 
 										<div class="filter audiowide-regular" data-filter="ventures">
 											Ventures <sup id="ventures-count"></sup>
-											<span>|</span>
+											<span>/</span>
 										</div>
 
 										<div class="filter audiowide-regular" data-filter="academic">
@@ -159,7 +139,6 @@
 
 									<div id="gallery"  class="gallery">
 
-									</div>
 								</div>
 							</div>
 
@@ -289,7 +268,7 @@
 											Reach out through any of the channels below.
 										</p>
 
-										<a class="contact-method" href="tel:+26876949262">
+										<a id="phone-cta" class="contact-method" href="tel:+26876123456">
 											<div class="contact-method-icon">
 												<img src="./images/call.svg"/>
 											</div>
@@ -300,7 +279,7 @@
 											</div>
 										</a>
 
-										<a class="contact-method" href="https://wa.me/26876949262?text=Hi%20Qhawe%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20opportunity."
+										<a id="whatsapp-cta" class="contact-method" href="https://wa.me/26876123456?text=Hi%20Qhawe%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20opportunity."
 									target="_blank">
 											<div class="contact-method-icon">
 												<img src="./images/whatsapp.svg"/>
@@ -308,11 +287,11 @@
 
 											<div class="contact-method-details">
 												<h3>WhatsApp</h3>
-												<p>Start a conversation</p>
+												<p>(click to) Start a conversation</p>
 											</div>
 										</a>
 
-										<a class="contact-method" href="mailto:qhawem54@gmail.com">
+										<a id="email-cta" class="contact-method" href="mailto:qhawem54@gmail.com">
 											<div class="contact-method-icon">
 												<img src="./images/email.svg"/>
 											</div>

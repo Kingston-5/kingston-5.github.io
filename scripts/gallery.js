@@ -186,10 +186,17 @@ $('#academic-count').text(
     ).length
 );
 
-	// When the user clicks the button, open the modal 
-	$(".card").on('click', function(e) {
+	// When the user clicks the card, open the modal 
+	$("#gallery").on('click', '.card', function(e) {
+
 		let pId = $(this).data('id');
 		let project = projects[pId];
+		
+			//mixpanel event
+	mixpanel.track("Card Clicked", {
+    "project_name": project.title,
+  });
+  
 		const slides = project.images.map((img, index) => `
     <div class="carousel-slide">
         <img src="${img}" alt="Image ${index + 1}">

@@ -40,36 +40,48 @@
 }
 
 .gallery {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 2rem;
+  columns: 3;
+  column-gap: 16px;
+  width: 100%;
 }
 
+@media (max-width: 900px) { .gallery { columns: 2; } }
+@media (max-width: 600px) { .gallery { columns: 1; } }
+
 .card {
-	width: min(500px, 100%);
-	overflow: hidden;
-  border: 2px solid var(--primary);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px  var(--primary);;
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
+  break-inside: avoid;
+  margin-bottom: 16px;
+  cursor: pointer;
+  background: var(--white);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--primary);
+  box-shadow: none;
+  transition: opacity 0.3s ease;
 }
 
 .card:hover {
-	transform: translateY(-6px);
-	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: none;
+  opacity: 0.82;
 }
-
 .card img {
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
-	display: block;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: auto; /* let images be their natural aspect ratio */
 }
 
 .card .container {
-	padding: 1.25rem;
+  padding: 10px 12px 12px;
+}
+
+.card .container h4 {
+  font-size: 13px;
+  margin: 0 0 2px;
+}
+
+.card .container p {
+  color: var(--secondary);
+  font-size: 11px;
+  margin: 0;
 }

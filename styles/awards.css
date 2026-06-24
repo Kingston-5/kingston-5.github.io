@@ -1,7 +1,6 @@
 .awards-section {
     width: 100%;
     padding: 5rem 2rem;
-
     background: var(--primary);
     display: flex;
     justify-content: center;
@@ -9,16 +8,15 @@
 
 .awards-panel {
     background: var(--primary);
-    border: 4px var(--white) dashed;
+    border: 2px var(--white) dashed;
     width: 100%;
     max-width: 1200px;
-    height: auto;
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .awards-panel h2 {
@@ -27,29 +25,20 @@
 }
 
 .awards-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
 }
 
 .award {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    background:red;
     padding: 1.5rem;
-    max-width: 300px;
-    min-height: 200px;
-    max-height: 350px;
     border-radius: 16px;
-
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.08);
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -57,16 +46,13 @@
 
 .award:hover {
     transform: translateY(-5px);
-
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .award-icon {
-    width: 64px;
-    height: 64px;
-
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,4 +89,53 @@
 
 .award-details a:hover {
     text-decoration: underline;
+}
+
+/* Tablet */
+ 
+@media (max-width: 720px) {
+    .awards-section {
+        padding: 3rem 1rem;
+    }
+ 
+    .awards-panel {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+        border-radius: 16px;
+    }
+ 
+    .awards-list {
+        grid-template-columns: 1fr;   /* single column stacks */
+        gap: 1rem;
+    }
+ 
+    /* on mobile, row layout reads better: icon left, text right */
+    .award {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.4rem;
+    }
+ 
+    .award-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+ 
+    .award-icon img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 420px) {
+    .awards-section {
+        padding: 2rem 0.75rem;
+    }
+ 
+    .awards-panel {
+        padding: 1.5rem 1.25rem;
+    }
 }

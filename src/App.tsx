@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { Home, Login, Register, NotFound, SignOut } from "@/pages";
 import MainLayout from "@/layouts/MainLayout";
+import {Helmet} from "react-helmet";
+
 
 const App: React.FC = () => {
   return (
@@ -11,32 +13,15 @@ const App: React.FC = () => {
         <main>
           <Routes>
             <Route
-              path="/logout"
-              element={
-                <MainLayout>
-                  {" "}
-                  <SignOut />{" "}
-                </MainLayout>
-              }
-            />
-            <Route
               path="/"
               element={
-                <MainLayout>
-                  {" "}
-                  <Home />{" "}
-                </MainLayout>
+                  <Home />
               }
             />
-
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
             <Route
               path="*"
               element={
-                <MainLayout>
                   <NotFound />
-                </MainLayout>
               }
             />
           </Routes>

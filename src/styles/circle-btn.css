@@ -1,0 +1,72 @@
+/* From Uiverse.io by vinodjangid07 */ 
+.circle-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px 1px var(--tetiary);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle-btn img {
+  width: 100px;
+  transition-duration: 0.3s;
+}
+
+.circle-btn:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: var(--primary);
+  align-items: center;
+}
+
+.circle-btn:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.circle-btn::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Scroll For More";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.circle-btn:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+.back-to-top {
+	position: fixed;
+	bottom: 2.5rem;
+	right: 1.5rem;
+}
+
+.back-to-top::before {
+  content: "Back To Top";
+}
+
+.whatsapp-cta {
+	position:fixed;
+	bottom: 2.5rem;
+	left: 1.5rem;
+}
+
+.whatsapp-cta::before {
+  content: "Click To chat";
+  color: var(--black);
+}

@@ -145,14 +145,25 @@ td {
 }
 
 @media (max-width: 768px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-item,
     .gallery-item.wide,
     .gallery-item.large {
         grid-column: span 1;
     }
 
+    .gallery-item img,
     .gallery-item.tall img,
     .gallery-item.large img {
-        height: 260px;
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+        background: #f8fafc;
     }
 }
 

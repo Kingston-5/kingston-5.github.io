@@ -10,10 +10,10 @@
 		<!-- FONTS -->
 		<style>
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
-</style>
+		</style>
 
 
-		<meta property="og:image" content="ihttps://kingston-5.github.io/">
+		<meta property="og:image" content="https://kingston-5.github.io/">
 		<meta property="og:url" content="https://kingston-5.github.io/">
 		<meta property="og:locale" content="en_US">
 		<meta property="og:locale:alternate" content="sz">
@@ -43,13 +43,14 @@
 
 		<link rel="stylesheet" type="text/css" href="./styles/carousel.css" />
 		<link rel="stylesheet" type="text/css" href="./styles/work.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/automations.css" />
 		<script
 	  src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"
    type="module"
    ></script>
 
 		<!-- Paste this right before your closing </head> tag -->
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			(function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
 				for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){b.push([g,[p].concat(Array.prototype.slice.call(arguments,0))])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===
 					e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[])
@@ -61,7 +62,7 @@
 				api_host: 'https://api-eu.mixpanel.com',
 			})
 
-		</script>
+		</script>-->
 				</head>
 				<body>
 
@@ -76,7 +77,7 @@
 
 						<!-- whatsapp CTA -->
 						<a id="whatsapp-cta" href="https://wa.me/26879736175?text=Hi%20Qhawe%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20opportunity."
-		 target="_blank" class="circle-btn whatsapp-cta" onclick=>
+						   target="_blank" class="circle-btn whatsapp-cta" onclick=>
 							<img src="./images/whatsapp.svg"/>
 						</a>
 						<!-- LANDING SECTION -->
@@ -130,36 +131,90 @@
 							<div class="gallery-wrap">
 								<div class="filters">
 
-										<div class="filter active audiowide-regular" data-filter="all">
-											ALL <sup id="all-count"></sup>
-											<span>/</span>
-										</div>
-
-										<div class="filter audiowide-regular" data-filter="company-work">
-											Company Work <sup id="company-work-count"></sup>
-											<span>/</span>
-										</div>
-
-										<div class="filter audiowide-regular" data-filter="freelance">
-											Freelance <sup id="freelance-count"></sup>
-											<span>/</span>
-										</div>
-
-										<div class="filter audiowide-regular" data-filter="ventures">
-											Ventures <sup id="ventures-count"></sup>
-											<span>/</span>
-										</div>
-
-										<div class="filter audiowide-regular" data-filter="academic">
-											Academic <sup id="academic-count"></sup>
-										</div>
-
+									<div class="filter active audiowide-regular" data-filter="all">
+										ALL <sup id="all-count"></sup>
+										<span>/</span>
 									</div>
 
-									<div id="gallery"  class="gallery">
+									<div class="filter audiowide-regular" data-filter="company-work">
+										Company Work <sup id="company-work-count"></sup>
+										<span>/</span>
+									</div>
+
+									<div class="filter audiowide-regular" data-filter="freelance">
+										Freelance <sup id="freelance-count"></sup>
+										<span>/</span>
+									</div>
+
+									<div class="filter audiowide-regular" data-filter="ventures">
+										Ventures <sup id="ventures-count"></sup>
+										<span>/</span>
+									</div>
+
+									<div class="filter audiowide-regular" data-filter="academic">
+										Academic <sup id="academic-count"></sup>
+									</div>
+
+								</div>
+
+								<div id="gallery"  class="gallery">
 
 								</div>
 							</div>
+
+
+
+
+							<!-- automations  Section -->
+							<section class="automations-section" id="automations">
+								<div class="automations-panel">
+									<h2 class="audiowide-regular">Business Automation Lab</h2>
+									<p>A showcase of practical automation solutions built for businesses, featuring workflows that integrate existing tools to eliminate repetitive tasks and save time.</p>
+									<p>These Projects tell astory of how Businesses can connect their existing tools(WhatsApp, Excel, Gmail, Google Drive),Automate repetitive tasks (invoices, reminders, reports), Integrate business functions (sales, inventory, finance), start optimising usign with dashboards and analytics anf finally Evolve into custom software only when the business has outgrown its existing tools.</p>
+
+									<div class="automations-list">
+										<div class="automation">
+											<div class="automation-image">
+												<img src="./images/business-automation/sales-to-invoice/cover.png"/>
+											</div>
+
+											<div class="automation-details">
+												<h3>Sales to Invoice Automation</h3>
+												<p>Transform spreadsheet sales into professional PDF invoices, validate inventory automatically, notify customers, and keep business records synchronized. </p>
+
+												<a href="/business-automations/invoice-automation.html">Read More</a>
+											</div>
+										</div>
+
+										<div class="automation">
+											<div class="automation-image">
+												<img src="./images/business-automation/comingsoon.png"/>
+											</div>
+
+											<div class="automation-details">
+												<h3>Automatic Payment Reminder</h3>
+												<p>[More info coming soon]</p>
+
+												<a href="#">Read More</a>
+											</div>
+										</div>
+
+										<div class="automation">
+											<div class="automation-image">
+												<img src="./images/business-automation/comingsoon.png"/>
+											</div>
+
+											<div class="automation-details">
+												<h3>WhatsApp Order Capture</h3>
+												<p>[More Info coming soon]</p>
+
+												<a href="#">Read More</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</section>
 
 
 							<!-- awards  Section -->
@@ -248,7 +303,7 @@
 									</summary>
 									<div>
 										<p class="quantico-regular">
-										Provided IT customer support and maintenance for corporate clients and on site clinic staff through helpdesk tools.
+											Provided IT customer support and maintenance for corporate clients and on site clinic staff through helpdesk tools.
 										</p>
 									</div>
 								</details>
@@ -299,7 +354,7 @@
 										</a>
 
 										<a id="whatsapp-cta" class="contact-method" href="https://wa.me/26879736175?text=Hi%20Qhawe%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20opportunity."
-									target="_blank">
+													  target="_blank">
 											<div class="contact-method-icon">
 												<img src="./images/whatsapp.svg"/>
 											</div>

@@ -39,4 +39,3 @@ transition: all 1s;
 .swipe-btn:hover::before {
 width: 160%;
 }
-~
